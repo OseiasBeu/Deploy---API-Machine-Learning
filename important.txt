@@ -1,0 +1,21 @@
+Pacotes para instalar
+pip install gunicorn
+pip install tensorflow==2.0.0
+pip install flask
+pip install flask-restful
+
+Deploy no Heroku
+Criar um arquivo "Procfile"
+pip3 freeze > requirements.txt
+git init
+heroku login
+heroku create nomedasuaapp
+git add .
+git commit -m "Text do Commit"
+heroku git:remote -a nomedasuaapp
+git push heroku master
+
+Instalar:
+Heroku CLI
+git
+Insomnia/Postman
